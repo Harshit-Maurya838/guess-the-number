@@ -1,0 +1,128 @@
+/* ============General=============== */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   -webkit-tap-highlight-color: transparent;
+}
+html, body{
+   width: 100%;
+   height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==============Game_Body=============== */
+.container{
+    width: 60vw;
+    height: 60vh;
+    background-color: #F2D1C9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    color: #462749;
+}
+h1{
+    text-align: center;
+    padding: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    background-color: #462749;
+    border-radius: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: white;
+}
+p{
+    padding: 12px;
+}
+.Score_board{
+    font-weight: 600;
+}
+.message{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game_description{
+    font-size: 20px;
+}
+
+
+/* =============Main_Game============ */
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#guess{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    height: 45px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.2rem;
+}
+#check{
+    width: 80px;
+    height: 45px;
+    border: none;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #8332AC;
+    color: white;
+    cursor: pointer;
+}
+#check:hover{
+    background-color: #8d45b1;
+}
+.guess_label{
+    width: 200px;
+}
+
+
+/* ==========For_Mobile============ */
+@media screen and (max-width: 620px){
+    .container{
+        width: 90vw;
+        height: 90vh;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+/* ===========Reset_Game============ */
+.reset_game{
+    width: 100%;
+    height: 100px;
+}
+.Reset{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #8332AC;
+    color: white;
+    cursor: pointer;
+}
+.Reset:hover{
+    background-color: #8d45b1;
+}
