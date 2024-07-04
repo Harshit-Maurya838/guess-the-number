@@ -8,7 +8,7 @@ let score = 10; // starting Score
 
 // This Fuction Calls Out When Check Button Click
 const checkTheNumber = () => {
-    if(score !== 0){if (inputNum.valueAsNumber >= 0 && inputNum.valueAsNumber <= 10) {
+    if(score !== 0){if (inputNum.valueAsNumber >= 0 && inputNum.valueAsNumber <= 100) {
         if (inputNum.valueAsNumber === randomNum) {
             displayMessage.innerText = `Hurray! You got The Number ${randomNum} and your Score is ${score}`;
             displayScore.innerText = `${score}`;
@@ -33,6 +33,7 @@ const checkTheNumber = () => {
             }
         }
     } else {
+        score--;
         displayMessage.innerText = "Please enter your number between 0 to 100 and then check your answer!";
         console.log(inputNum.valueAsNumber);
         inputNum.value = "";
