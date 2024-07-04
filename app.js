@@ -10,8 +10,9 @@ let score = 10; // starting Score
 const checkTheNumber = () => {
     if(score !== 0){if (inputNum.valueAsNumber >= 0 && inputNum.valueAsNumber <= 10) {
         if (inputNum.valueAsNumber === randomNum) {
-            displayMessage.innerText = `Hurray! You got The Number ${randomNum} an you Score is ${score}`;
+            displayMessage.innerText = `Hurray! You got The Number ${randomNum} and your Score is ${score}`;
             displayScore.innerText = `${score}`;
+            setTimeout(() =>{location.reload()}, 5000);
         } else {
             score--;
             if (inputNum.valueAsNumber < randomNum && Math.abs(inputNum.valueAsNumber - randomNum) <= 2) {
