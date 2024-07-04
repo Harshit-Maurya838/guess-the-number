@@ -1,7 +1,7 @@
 // Extracting component from html 
 
 let inputNum = document.getElementById("guess");
-const randomNum = Math.floor(Math.random() * 10); // in this line random number will generate
+const randomNum = Math.floor(Math.random() * 100); // in this line random number will generate
 const displayScore = document.querySelector("#Score");
 const displayMessage = document.querySelector(".message");
 let score = 10; // starting Score
