@@ -15,7 +15,7 @@ const checkTheNumber = () => {
             setTimeout(() =>{location.reload()}, 5000);
         } else {
             score--;
-            if (inputNum.valueAsNumber < randomNum && Math.abs(inputNum.valueAsNumber - randomNum) <= 2) {
+            if (inputNum.valueAsNumber < randomNum && Math.abs(inputNum.valueAsNumber - randomNum) <= 5) {
                 displayMessage.innerText = "You are very close to the Number";
                 console.log(inputNum.valueAsNumber);
                 displayScore.innerText = `${score}`;
