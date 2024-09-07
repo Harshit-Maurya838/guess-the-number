@@ -50,7 +50,7 @@ const checkTheNumber = () => {
     displayMessage.innerText = "Ohh you fail the challenge!";
     setTimeout(() => {
       location.reload();
-    }, 5000);
+    }, 60000);
   }
 };
 
