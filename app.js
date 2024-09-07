@@ -15,7 +15,7 @@ const checkTheNumber = () => {
         displayScore.innerText = `${score}`;
         setTimeout(() => {
           location.reload();
-        }, 5000);
+        }, 20000);
       } else {
         score--;
         if (
@@ -50,7 +50,7 @@ const checkTheNumber = () => {
     displayMessage.innerText = "Ohh you fail the challenge!";
     setTimeout(() => {
       location.reload();
-    }, 60000);
+    }, 20000);
   }
 };
 
