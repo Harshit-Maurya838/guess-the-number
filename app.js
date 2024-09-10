@@ -47,7 +47,7 @@ const checkTheNumber = () => {
       inputNum.value = "";
     }
   } else {
-    displayMessage.innerText = "Ohh you fail the challenge!";
+    displayMessage.innerText = `Ohh you fail the challenge! Your number is ${randomNum}`;
     setTimeout(() => {
       location.reload();
     }, 20000);
