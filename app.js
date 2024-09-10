@@ -58,3 +58,15 @@ const checkTheNumber = () => {
 const resetGame = () => {
   location.reload();
 };
+
+// calling the function on clicking check button
+document.querySelector("#check").addEventListener("click", checkTheNumber);
+
+// Add event listener for Enter key on the input field
+const inputField = document.querySelector("#guess");
+
+inputField.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    checkTheNumber();
+  }
+});

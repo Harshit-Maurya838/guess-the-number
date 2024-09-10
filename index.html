@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Number Guess Challenge</h1>
         <p class="game_description">
-            "Number Guess Challenge" is a fun game where you guess a secret number. Starting with a score of 10, each incorrect guess deducts 1 point. The goal is to guess correctly number from 0 to 100 with in 10 attempts as possible to maintain a high score. Can you achieve a perfect score?
+            "Number Guess Challenge" is a fun game where you guess a secret number. Starting with a score of 10, each
+            incorrect guess deducts 1 point. The goal is to guess correctly number from 0 to 100 with in 10 attempts as
+            possible to maintain a high score. Can you achieve a perfect score?
         </p>
         <p class="Score_board">Score: <span id="Score">10</span></p>
         <p class="message">Hi, Best Of Luck</p>
         <div class="game">
             <label for="guess" class="guess_label">Enter Your Number:</label>
-            <input type="number" name="guess_number" id="guess" placeholder="Your Number" required/>
-            <button id="check" onclick="checkTheNumber()">Check</button>
+            <input type="number" name="guess_number" id="guess" placeholder="Your Number" required />
+            <button id="check">Check</button>
         </div>
         <div class="reset_game">
             <button class="Reset" onclick="resetGame()">Reset</button>
@@ -25,4 +29,5 @@
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
